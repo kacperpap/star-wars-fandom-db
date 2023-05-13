@@ -1,0 +1,99 @@
+Table star_wars.trilogy {
+  id int [pk, not null, increment]
+  trilogy_name varchar [unique, not null]
+  trilogu_order int [unique, not null]
+  trilogy_size int [not null]
+  type cinematic_type [not null]
+}
+
+enum cinematic_type {
+  film
+  series
+  other
+}
+
+Table star_wars.episodes {
+  id int [pk, not null, increment]
+  title varchar [not null]
+  director varchar 
+  production_dir varchar
+  musics_creator varchar
+  creation_date date
+  budget int 
+  duration int
+  trilogy_id int [ref: > star_wars.trilogy.id]
+}
+
+Table star_wars.characters {
+  id int [pk, not null, increment]
+  role varchar [not null]
+  actor_name varchar [not null]
+}
+
+Table star_wars.universum {
+  id int [pk, not null, increment]
+  place_name varchar [not null]
+  place_membership place_status [not null]
+}
+
+enum place_status {
+  Republic
+  Separatist
+  Undetermined
+}
+
+//założenie: event dzieje się w całości
+//tylko w jednym odcinku
+Table star_wars.events {
+  id int [pk, not null, increment]
+  character_id int [ref: > star_wars.characters.id]
+  episode_id int [ref: > star_wars.episodes.id]
+  description int [ref: > star_wars.scenes.id]
+}
+
+Table star_wars.scenes {
+  id int [pk, not null, increment]
+  description varchar [not null]
+}
+
+//założenie
+//-> jeśli tylko nagroda dla filmu nie dla
+//-> konkretnego aktora, to aktor ma wartosc null
+Table star_wars.awards {
+  id int [pk, not null, increment]
+  role_id int [ref: > star_wars.characters.id]
+  episode_id int [ref: > star_wars.episodes.id]
+  type award_type [not null]
+  cathegory award_cathegory [not null]
+}
+
+enum award_type {
+  Grammy
+  Oscar
+  "Golden Raspberry Award"
+  BAFTA
+  Saturn
+  other
+}
+
+enum award_cathegory {
+  episode
+  scene
+  role
+  other
+}
+
+
+//tabela pośrednia w relacji wiele do wielu
+Table star_wars.episode_appears {
+  id int 
+  id_episode int [ref: > star_wars.episodes.id]
+  id_character int [ref: < star_wars.characters.id]
+}
+
+//tabela pośrednia w relacji wiele do wielu
+Table star_wars.episode_places {
+  id int
+  id_episode int [ref: > star_wars.episodes.id]
+  id_place int [ref: < star_wars.universum.id]
+}
