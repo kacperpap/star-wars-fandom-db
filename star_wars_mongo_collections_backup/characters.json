@@ -1,0 +1,206 @@
+[
+    {
+        "role": "Obi-Wan Kenobi",
+        "actor_name": "Ewan McGregor",
+        "episodes": [
+            "Mroczne Widmo",
+            "Atak klonów",
+            "Zemsta Sithów"
+        ]
+    },
+    {
+        "role": "Padme Amidala",
+        "actor_name": "Natalie Portman",
+        "episodes": [
+            "Mroczne Widmo",
+            "Atak klonów",
+            "Zemsta Sithów"
+        ]
+    },
+    {
+        "role": "Anakin Skywalker (young)",
+        "actor_name": "Jake Lloyd",
+        "episodes": [
+            "Mroczne Widmo"
+        ]
+    },
+    {
+        "role": "Anakin Skywalker",
+        "actor_name": "Hayden Christensen",
+        "episodes": [
+            "Atak klonów",
+            "Zemsta Sithów"
+        ]
+    },
+    {
+        "role": "Qui-Gon Jinn",
+        "actor_name": "Liam Nesson",
+        "episodes": [
+            "Mroczne Widmo"
+        ]
+    },
+    {
+        "role": "Mace Windu",
+        "actor_name": "Samuel Jackson",
+        "episodes": [
+            "Mroczne Widmo",
+            "Atak klonów",
+            "Zemsta Sithów"
+        ]
+    },
+    {
+        "role": "Yoda",
+        "actor_name": "Frank Oz",
+        "episodes": [
+            "Mroczne Widmo",
+            "Atak klonów",
+            "Zemsta Sithów"
+        ]
+    },
+    {
+        "role": "Palpatine (Darth Sidious)",
+        "actor_name": "Ian McDiarmid",
+        "episodes": [
+            "Mroczne Widmo",
+            "Atak klonów",
+            "Zemsta Sithów"
+        ]
+    },
+    {
+        "role": "Shmi Skywalker",
+        "actor_name": "Pernilla August",
+        "episodes": []
+    },
+    {
+        "role": "Jar Jar Binks",
+        "actor_name": "Ahmed Best",
+        "episodes": []
+    },
+    {
+        "role": "Darth Maul",
+        "actor_name": "Ray Park",
+        "episodes": [
+            "Mroczne Widmo"
+        ]
+    },
+    {
+        "role": "C-3PO",
+        "actor_name": "Anthony Daniels",
+        "episodes": [
+            "Atak klonów",
+            "Zemsta Sithów",
+            "Nowa nadzieja",
+            "Imperium kontratakuje",
+            "Powrót Jedi",
+            "Przebudzenie Mocy",
+            "Ostatni Jedi",
+            "Skywalker Odrodzenie"
+        ]
+    },
+    {
+        "role": "R2-D2",
+        "actor_name": "Kenny Baker",
+        "episodes": [
+            "Atak klonów",
+            "Zemsta Sithów",
+            "Nowa nadzieja",
+            "Imperium kontratakuje",
+            "Powrót Jedi",
+            "Przebudzenie Mocy",
+            "Ostatni Jedi",
+            "Skywalker Odrodzenie"
+        ]
+    },
+    {
+        "role": "Hrabia Dooku",
+        "actor_name": "Christopher Lee",
+        "episodes": []
+    },
+    {
+        "role": "Jango Fett",
+        "actor_name": "Temuera Morrison",
+        "episodes": []
+    },
+    {
+        "role": "Boba Fett",
+        "actor_name": "Daniel Logan",
+        "episodes": []
+    },
+    {
+        "role": "Bail Organa",
+        "actor_name": "Jimmy Smits",
+        "episodes": []
+    },
+    {
+        "role": "General Grivesous",
+        "actor_name": "Matthew Wood",
+        "episodes": [
+            "Atak klonów"
+        ]
+    },
+    {
+        "role": "Ki-Adi-Mundi",
+        "actor_name": "Silas Carson",
+        "episodes": []
+    },
+    {
+        "role": "Finn",
+        "actor_name": "John Boyega",
+        "episodes": []
+    },
+    {
+        "role": "Rey",
+        "actor_name": "Daisy Ridley",
+        "episodes": [
+            "Przebudzenie Mocy",
+            "Ostatni Jedi",
+            "Skywalker Odrodzenie"
+        ]
+    },
+    {
+        "role": "Kylo Ren",
+        "actor_name": "Adam Driver",
+        "episodes": [
+            "Przebudzenie Mocy",
+            "Ostatni Jedi",
+            "Skywalker Odrodzenie"
+        ]
+    },
+    {
+        "role": "Han Solo",
+        "actor_name": "Harrison Ford",
+        "episodes": [
+            "Przebudzenie Mocy",
+            "Ostatni Jedi",
+            "Skywalker Odrodzenie"
+        ]
+    },
+    {
+        "role": "Leia Organa",
+        "actor_name": "Carrie Fisher",
+        "episodes": [
+            "Przebudzenie Mocy",
+            "Ostatni Jedi",
+            "Skywalker Odrodzenie"
+        ]
+    },
+    {
+        "role": "Chewbacca",
+        "actor_name": "Peter Mayshew",
+        "episodes": [
+            "Przebudzenie Mocy",
+            "Ostatni Jedi",
+            "Skywalker Odrodzenie"
+        ]
+    },
+    {
+        "role": "Darth Vader",
+        "actor_name": "David Provose",
+        "episodes": []
+    },
+    {
+        "role": "Luke Skywalker",
+        "actor_name": "Mark Hamil",
+        "episodes": []
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Mroczne Widmo",
+        "director": "George Lucas",
+        "production_dir": "George Lucas, Rick McCallum",
+        "musics_creator": "John Williams",
+        "creation_date": "1999-05-15T22:00:00.000Z",
+        "budget": 115000000,
+        "duration": 131,
+        "trilogy_name": "Prequel"
+    },
+    {
+        "title": "Atak klonów",
+        "director": "George Lucas",
+        "production_dir": "George Lucas, Rick McCallum",
+        "musics_creator": "John Williams",
+        "creation_date": "2002-05-15T22:00:00.000Z",
+        "budget": 115000000,
+        "duration": 143,
+        "trilogy_name": "Prequel"
+    },
+    {
+        "title": "Zemsta Sithów",
+        "director": "George Lucas",
+        "production_dir": "Rick McCallum",
+        "musics_creator": "John Williams",
+        "creation_date": "2005-05-18T22:00:00.000Z",
+        "budget": 113000000,
+        "duration": 135,
+        "trilogy_name": "Prequel"
+    },
+    {
+        "title": "Nowa nadzieja",
+        "director": "George Lucas",
+        "production_dir": "George Lucas",
+        "musics_creator": "John Williams",
+        "creation_date": "1977-05-14T22:00:00.000Z",
+        "budget": 11000000,
+        "duration": 121,
+        "trilogy_name": "Original"
+    },
+    {
+        "title": "Imperium kontratakuje",
+        "director": "Irvin Kershner",
+        "production_dir": "George Lucas",
+        "musics_creator": "John Williams",
+        "creation_date": "1980-05-20T22:00:00.000Z",
+        "budget": 18000000,
+        "duration": 124,
+        "trilogy_name": "Original"
+    },
+    {
+        "title": "Powrót Jedi",
+        "director": "Richard Marquand",
+        "production_dir": "George Lucas",
+        "musics_creator": "John Williams",
+        "creation_date": "1983-05-24T22:00:00.000Z",
+        "budget": 32500000,
+        "duration": 133,
+        "trilogy_name": "Original"
+    },
+    {
+        "title": "Przebudzenie Mocy",
+        "director": "J.J. Abrams",
+        "production_dir": "Kathleen Kennedy, J.J. Abrams, Bryan Burk",
+        "musics_creator": "John Williams",
+        "creation_date": "2015-12-13T23:00:00.000Z",
+        "budget": 245000000,
+        "duration": 135,
+        "trilogy_name": "Sequel"
+    },
+    {
+        "title": "Ostatni Jedi",
+        "director": "Rian Johnson",
+        "production_dir": "Kathleen Kennedy, Ram Bergman",
+        "musics_creator": "John Williams",
+        "creation_date": "2017-12-08T23:00:00.000Z",
+        "budget": 317000000,
+        "duration": 152,
+        "trilogy_name": "Sequel"
+    },
+    {
+        "title": "Skywalker Odrodzenie",
+        "director": "J.J. Abrams",
+        "production_dir": "Kathleen Kennedy",
+        "musics_creator": "John Williams",
+        "creation_date": "2019-12-15T23:00:00.000Z",
+        "budget": 275000000,
+        "duration": 141,
+        "trilogy_name": "Sequel"
+    }
+]

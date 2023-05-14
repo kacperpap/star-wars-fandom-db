@@ -1,0 +1,42 @@
+[
+    {
+        "type": "Saturn",
+        "cathegory": "episode",
+        "description": "Najlepsze efekty specjalne",
+        "title": "Zemsta Sithów",
+        "role": null,
+        "actor_name": null
+    },
+    {
+        "type": "Grammy",
+        "cathegory": "other",
+        "description": "Najlepsza muzyka filmowa",
+        "title": null,
+        "role": null,
+        "actor_name": null
+    },
+    {
+        "type": "Oscar",
+        "cathegory": "other",
+        "description": "Najlepsza muzyka oryginalna",
+        "title": null,
+        "role": null,
+        "actor_name": null
+    },
+    {
+        "type": "Saturn",
+        "cathegory": "role",
+        "description": "Najlepszy aktor drugoplanowy",
+        "title": "Nowa nadzieja",
+        "role": "Palpatine (Darth Sidious)",
+        "actor_name": "Ian McDiarmid"
+    },
+    {
+        "type": "BAFTA",
+        "cathegory": "scene",
+        "description": "Najlepsza scena: Maul kontra Jedi",
+        "title": null,
+        "role": "Obi-Wan Kenobi",
+        "actor_name": "Ewan McGregor"
+    }
+]

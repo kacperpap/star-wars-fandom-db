@@ -1,0 +1,20 @@
+[
+    {
+        "trilogy_name": "Prequel",
+        "trilogy_order": 1,
+        "trilogy_size": 3,
+        "type": "film"
+    },
+    {
+        "trilogy_name": "Original",
+        "trilogy_order": 2,
+        "trilogy_size": 3,
+        "type": "film"
+    },
+    {
+        "trilogy_name": "Sequel",
+        "trilogy_order": 3,
+        "trilogy_size": 3,
+        "type": "film"
+    }
+]

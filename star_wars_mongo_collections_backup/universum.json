@@ -1,0 +1,47 @@
+[
+    {
+        "place_name": "Mustafar",
+        "place_membership": "Separatist",
+        "titles": [
+            "Powrót Jedi"
+        ]
+    },
+    {
+        "place_name": "Alderan",
+        "place_membership": "Republic",
+        "titles": [
+            "Atak klonów"
+        ]
+    },
+    {
+        "place_name": "Kamino",
+        "place_membership": "Republic",
+        "titles": [
+            "Nowa nadzieja"
+        ]
+    },
+    {
+        "place_name": "Naboo",
+        "place_membership": "Republic",
+        "titles": [
+            "Zemsta Sithów",
+            "Nowa nadzieja"
+        ]
+    },
+    {
+        "place_name": "Coruscant",
+        "place_membership": "Republic",
+        "titles": [
+            "Nowa nadzieja",
+            "Imperium kontratakuje",
+            "Powrót Jedi"
+        ]
+    },
+    {
+        "place_name": "Hoth",
+        "place_membership": "Undetermined",
+        "titles": [
+            "Atak klonów"
+        ]
+    }
+]

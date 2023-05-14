@@ -1,0 +1,42 @@
+[
+    {
+        "roles": [
+            "Han Solo",
+            "Kylo Ren"
+        ],
+        "title": "Przebudzenie Mocy",
+        "description": "Śmierć Hana Solo, któy został zabity przez swojego syna Kylo Rena"
+    },
+    {
+        "roles": [
+            "Darth Vader",
+            "Luke Skywalker"
+        ],
+        "title": "Imperium kontratakuje",
+        "description": "Luke odkrywa, że Darth Vader to jego ojciec: I am your father Luke"
+    },
+    {
+        "roles": [
+            "Mace Windu",
+            "Jango Fett"
+        ],
+        "title": "Atak klonów",
+        "description": "Zabójstwo Jango Fetta na arenie Genosis"
+    },
+    {
+        "roles": [
+            "Padme Amidala"
+        ],
+        "title": "Zemsta Sithów",
+        "description": "Śmierć Padme Amidali przy porodzie"
+    },
+    {
+        "roles": [
+            "Obi-Wan Kenobi",
+            "Qui-Gon Jinn",
+            "Darth Maul"
+        ],
+        "title": "Mroczne Widmo",
+        "description": "Śmierć Qui-Gon Jinn'a z rąk Maula i strącenie w przepaść Maula w wyniku zemsty Obi-Wana"
+    }
+]
