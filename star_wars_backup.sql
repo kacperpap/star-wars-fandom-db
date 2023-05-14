@@ -4,7 +4,7 @@ CREATE SCHEMA `star_wars`;
 CREATE TABLE `star_wars`.`trilogy` (
   `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `trilogy_name` varchar(255) UNIQUE NOT NULL,
-  `trilogu_order` int UNIQUE NOT NULL,
+  `trilogy_order` int UNIQUE NOT NULL,
   `trilogy_size` int NOT NULL,
   `type` ENUM ('film', 'series', 'other') NOT NULL
 );
@@ -89,9 +89,9 @@ ALTER TABLE  `star_wars`.`episode_places` ADD FOREIGN KEY  (`id_place`) REFERENC
 
 
 
-INSERT INTO star_wars.trilogy (trilogy.trilogy_name, trilogy.trilogu_order, trilogy.trilogy_size, trilogy.type) VALUES ("Prequel", 1, 3, "film");
-INSERT INTO star_wars.trilogy (trilogy.trilogy_name, trilogy.trilogu_order, trilogy.trilogy_size, trilogy.type) VALUES ("Original", 2, 3, "film");
-INSERT INTO star_wars.trilogy (trilogy.trilogy_name, trilogy.trilogu_order, trilogy.trilogy_size, trilogy.type) VALUES ("Sequel", 3, 3, "film");
+INSERT INTO star_wars.trilogy (trilogy.trilogy_name, trilogy.trilogy_order, trilogy.trilogy_size, trilogy.type) VALUES ("Prequel", 1, 3, "film");
+INSERT INTO star_wars.trilogy (trilogy.trilogy_name, trilogy.trilogy_order, trilogy.trilogy_size, trilogy.type) VALUES ("Original", 2, 3, "film");
+INSERT INTO star_wars.trilogy (trilogy.trilogy_name, trilogy.trilogy_order, trilogy.trilogy_size, trilogy.type) VALUES ("Sequel", 3, 3, "film");
 
 
 INSERT INTO star_wars.episodes (title, director, production_dir, musics_creator, creation_date, budget, duration,trilogy_id) VALUES ("Mroczne Widmo", "George Lucas","George Lucas, Rick McCallum", "John Williams","1999-05-16",115000000, 131,1);

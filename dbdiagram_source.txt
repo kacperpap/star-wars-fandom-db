@@ -1,3 +1,6 @@
+// https://dbdiagram.io/docs/
+
+
 Table star_wars.trilogy {
   id int [pk, not null, increment]
   trilogy_name varchar [unique, not null]
