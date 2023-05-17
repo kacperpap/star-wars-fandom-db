@@ -1,4 +1,4 @@
-const mysqlConnection = require("../config/mysql").connection
+const mysqlConnection = require("../../config/mysql").connection
 
 // Accept the connection object as a parameter (dependency injection)
 // Prevents circular dependency which is connection object

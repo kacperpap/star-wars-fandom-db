@@ -1,5 +1,5 @@
 const express = require("express")
-const mysql_controllers = require("../controllers/mysql_controllers");
+const mysql_controllers = require("../../controllers/mysql_controllers/mysql_get_controllers");
 
 
 function apiMysql() {
