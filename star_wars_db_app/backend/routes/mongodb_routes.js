@@ -1,7 +1,7 @@
 const express = require("express")
-const mongodb_get_controllers = require("../../controllers/mongodb_controllers/mongodb_get_controllers")
-const mongodb_insert_controllers = require("../../controllers/mongodb_controllers/mongodb_insert_controllers")
-const mongodb_delete_controllers = require("../../controllers/mongodb_controllers/mongodb_delete_controllers")
+const mongodb_get_controllers = require("../controllers/mongodb_controllers/mongodb_get_controllers")
+const mongodb_insert_controllers = require("../controllers/mongodb_controllers/mongodb_insert_controllers")
+const mongodb_delete_controllers = require("../controllers/mongodb_controllers/mongodb_delete_controllers")
 
 
 function apiMongo(){
@@ -29,7 +29,7 @@ function apiMongo(){
     api.post("/insert/awards", mongodb_insert_controllers.insertOneIntoAwards)
 
     // POST /api/mongodb/delete
-    api.post("/delete", mongodb_delete_controllers.deleteDocumentFromCollection)
+    api.delete("/delete", mongodb_delete_controllers.deleteDocumentFromCollectionByObjectID)
 
 
     return api;

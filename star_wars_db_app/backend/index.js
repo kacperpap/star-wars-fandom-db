@@ -1,7 +1,7 @@
 const express = require('express')
 
-const mysql_routes = require("./routes/mysql_routes/mysql_routes");
-const mongodb_routes = require("./routes/mongodb_routes/mongodb_routes")
+const mysql_routes = require("./routes/mysql_routes");
+const mongodb_routes = require("./routes/mongodb_routes")
 const bodyParser = require("body-parser");
 
 

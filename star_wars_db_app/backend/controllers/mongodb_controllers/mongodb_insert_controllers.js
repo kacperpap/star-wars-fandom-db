@@ -65,7 +65,7 @@ async function insertOneIntoEpisodes(req,res){
             return;
         })
         .catch(error => {
-            console.log("insertOneIntoTrilogy: ",error)
+            console.log("insertOneIntoEpisodes: ",error)
             res.status(500).send("insertOneIntoEpisodes error")
             return;
         })
