@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>ToDo</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="./src/js/app.js" defer type="module"></script>
+    </head>
+    <body>
+        <div class="all">
+
+            <form class="form" id="todoForm">
+                <div class="form-row">
+                    <label for="todoTitle" class="form-label">Tytuł*</label>
+                    <input type="text" class="form-control" id="todoTitle" name="title" required>
+                </div>
+                <div class="form-row">
+                    <label for="todoDirector" class="form-label">Reżyser*</label>
+                    <input type="text" class="form-control" id="todoDirector" name="director" required>
+                </div>
+                <div class="form-row">
+                    <label for="todoProductionDir" class="form-label">Dyrektor produkcji</label>
+                    <input type="text" class="form-control" id="todoProductionDir" name="production_dir">
+                </div>
+                <div class="form-row">
+                    <label for="todoMusicsCreator" class="form-label">Twórca muzyki</label>
+                    <input type="text" class="form-control" id="todoMusicsCreator" name="musics_creator">
+                </div>
+                <div class="form-row">
+                    <label for="todoCreationDate" class="form-label">Data tworzenia*</label>
+                    <input type="date" class="form-control" id="todoCreationDate" name="creation_date" value="2023-05-22">
+                </div>
+                <div class="form-row">
+                    <label for="todoBudget" class="form-label">Budżet</label>
+                    <input type="text" class="form-control" id="todoBudget" name="budget">
+                </div>
+                <div class="form-row">
+                    <label for="todoDuration" class="form-label">Czas trwania</label>
+                    <input type="text" class="form-control" id="todoDuration" name="duration">
+                </div>
+<!--                <div class="form-row">-->
+<!--                    <label for="todoTrilogyId" class="form-label">ID trylogii*</label>-->
+<!--                    <select class="form-control" id="todoTrilogyId" name="trilogy_id" required></select>-->
+<!--                </div>-->
+
+                <div class="form-row form-row-last">
+                    <button type="submit" class="button form-button">Dodaj</button>
+                </div>
+            </form>
+
+
+            <div class="task-list-cnt">
+                <form class="task-list-search">
+                    <input type="search" id="todoSearch">
+                </form>
+
+                <div class="task-list">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
