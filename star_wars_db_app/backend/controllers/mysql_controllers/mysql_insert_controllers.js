@@ -46,8 +46,8 @@ async function insertOneIntoEpisodes(req, res){
     const production_dir = req.body.episode_production_director?.toString();
     const musics_creator = req.body.episode_musics_creator?.toString();
     const creation_date = new Date(req.body.episode_creation_date)
-    let budget = req.body.episode_budget
-    let duration = req.body.episode_duration
+    let budget = req.body.episode_budget?.toString()
+    let duration = req.body.episode_duration?.toString()
     let trilogy_name = req.body.episode_trilogy_name?.toString()
     let trilogy_id = undefined;
 
