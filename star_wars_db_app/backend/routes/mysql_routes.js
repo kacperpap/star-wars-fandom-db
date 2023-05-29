@@ -1,6 +1,7 @@
 const express = require("express")
 const mysql_get_controllers = require("../controllers/mysql_controllers/mysql_get_controllers");
 const mysql_insert_controllers = require("../controllers/mysql_controllers/mysql_insert_controllers")
+const mysql_delete_controllers = require("../controllers/mysql_controllers/mysql_delete_controllers")
 
 
 function apiMysql() {
@@ -33,6 +34,9 @@ function apiMysql() {
     //GET /api/mysql/get/episode-appears
     api.get('/get/episode-appears',mysql_get_controllers.getAllEpisodeAppears)
 
+    //GET /api/mysql/get/table
+    api.get('/get/table', mysql_get_controllers.getAllTable)
+
     //POST /api/mysql/insert/trilogy
     api.post('/insert/trilogy',mysql_insert_controllers.insertOneIntoTrilogy)
 
@@ -59,6 +63,9 @@ function apiMysql() {
 
     //POST /api/mysql/insert/episode-events
     api.post('/insert/episode-events',mysql_insert_controllers.insertOneIntoEpisodeEvents)
+
+    //DELETE /api/mysql/delete
+    api.delete('/delete', mysql_delete_controllers.deleteRecordFromTableByID)
 
 
     return api;

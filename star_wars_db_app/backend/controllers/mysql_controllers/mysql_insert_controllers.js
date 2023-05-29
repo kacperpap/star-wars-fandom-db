@@ -1,4 +1,3 @@
-const {mongoDB} = require("../../config/mongo");
 const mysqlConnection = require("../../config/mysql").connection
 
 
@@ -74,8 +73,15 @@ async function insertOneIntoEpisodes(req, res){
         let values = [title, director, production_dir, musics_creator, creation_date,budget, duration, trilogy_id];
         await mysqlConnection.query(insertQuery,values, (error, results) => {
             if (error) {
-                console.log("insertOneIntoEpisodes: ", error)
-                return res.status(503).send(error);
+                if(error.errno == 1452) {
+                    let errMessage = "insertOneIntoEpisodes: foreign key constraint (the foreign key you want to add does not exist in the parent table)"
+                    console.log("insertOneIntoEpisodes: ", error)
+                    return res.status(500).send(errMessage);
+                }
+                else {
+                    console.log("insertOneIntoEpisodes: ", error)
+                    return res.status(500).send(error);
+                }
             }
             else {
                 return res.status(200).send("insertOneIntoEpisodes: done successfully");
@@ -190,8 +196,15 @@ async function insertOneIntoAwards(req, res)
 
     await mysqlConnection.query(insertQuery,values, (error, results) => {
         if (error) {
-            console.log("insertOneIntoAwards: ", error)
-            return res.status(500).send(error);
+            if(error.errno == 1452) {
+                let errMessage = "insertOneIntoAwards: foreign key constraint (the foreign key you want to add does not exist in the parent table)"
+                console.log("insertOneIntoAwards: ", error)
+                return res.status(500).send(errMessage);
+            }
+            else {
+                console.log("insertOneIntoAwards: ", error)
+                return res.status(500).send(error);
+            }
         }
         else {
             return res.status(200).send("insertOneIntoAwards: done successfully");
@@ -220,8 +233,15 @@ async function insertOneIntoEpisodePlaces(req, res)
 
     await mysqlConnection.query(insertQuery,values, (error, results) => {
         if (error) {
-            console.log("insertOneIntoEpisodePlaces: ", error)
-            return res.status(500).send(error);
+            if(error.errno == 1452){
+                let errMessage = "insertOneIntoEpisodePlaces: foreign key constraint (the foreign key you want to add does not exist in the parent table)"
+                console.log("insertOneIntoEpisodePlaces: ", error)
+                return res.status(500).send(errMessage);
+            }
+            else {
+                console.log("insertOneIntoEpisodePlaces: ", error)
+                return res.status(500).send(error);
+            }
         }
         else {
             return res.status(200).send("insertOneIntoEpisodePlaces: done successfully");
@@ -250,8 +270,15 @@ async function insertOneIntoEpisodeAppears(req, res)
 
     await mysqlConnection.query(insertQuery,values, (error, results) => {
         if (error) {
-            console.log("insertOneIntoEpisodeAppears: ", error)
-            return res.status(500).send(error);
+            if(error.errno == 1452) {
+                let errMessage = "insertOneIntoEpisodeAppears: foreign key constraint (the foreign key you want to add does not exist in the parent table)"
+                console.log("insertOneIntoEpisodeAppears: ", error)
+                return res.status(500).send(errMessage);
+            }
+            else {
+                console.log("insertOneIntoEpisodeAppears: ", error)
+                return res.status(500).send(error);
+            }
         }
         else {
             return res.status(200).send("insertOneIntoEpisodeAppears: done successfully");
@@ -263,7 +290,7 @@ async function insertOneIntoEpisodeEvents(req, res)
 {
     let episode_id = req.body.episode_id
     let character_id = req.body.character_id
-    let desc_id = req.body.describtion_id
+    let desc_id = req.body.description_id
 
     if(episode_id !== undefined)
         episode_id = parseInt(episode_id)
@@ -284,8 +311,15 @@ async function insertOneIntoEpisodeEvents(req, res)
 
     await mysqlConnection.query(insertQuery,values, (error, results) => {
         if (error) {
-            console.log("insertOneIntoEpisodeEvents: ", error)
-            return res.status(500).send(error);
+            if(error.errno == 1452) {
+                let errMessage = "insertOneIntoEpisodeEvents: foreign key constraint (the foreign key you want to add does not exist in the parent table)"
+                console.log("insertOneIntoEpisodeEvents: ", error)
+                return  res.status(500).send(errMessage)
+            }
+            else {
+                console.log("insertOneIntoEpisodeEvents: ", error)
+                return res.status(500).send(error);
+            }
         }
         else {
             return res.status(200).send("insertOneIntoEpisodeEvents: done successfully");

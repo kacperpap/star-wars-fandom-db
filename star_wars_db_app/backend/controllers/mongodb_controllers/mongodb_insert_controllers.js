@@ -107,7 +107,8 @@ async function insertOneIntoUniversum(req,res){
         membership = undefined
 
     if(!name || !membership) {
-        res.status(500).send("insertOneIntoUniversum: place_name, place_membership (Separatist/Republic/Undetermined) needs to be specified")
+        res.status(500).send("insertOneIntoUniversum: place_name, place_membership (Separatist/Republic/Undetermined)" +
+            " needs to be specified")
         return;
     }
     await collection.insertOne({place_name: name, place_membership: membership, episodes: episodes})
@@ -121,6 +122,7 @@ async function insertOneIntoUniversum(req,res){
             return;
         })
 }
+
 
 
 async function insertOneIntoEvents(req,res){
