@@ -39,7 +39,6 @@ export function renderSingleTask(dataElement) {
     element.classList.add("task");
     element.dataset.id = dataElement.id;
 
-    //element.innerHTML = getTaskHTML(dataElement);
     element.innerHTML = getEpisodeHTML(dataElement)
     ul.append(element);
 }

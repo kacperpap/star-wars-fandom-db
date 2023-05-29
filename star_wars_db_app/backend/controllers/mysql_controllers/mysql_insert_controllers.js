@@ -58,15 +58,13 @@ async function insertOneIntoEpisodes(req, res){
         duration = parseInt(duration)
 
     let getQuery = "SELECT trilogy.id FROM trilogy WHERE trilogy.trilogy_name LIKE \"" + trilogy_name + "\""
-
     await mysqlConnection.query(getQuery,async (error,result)=>{
         if(error){
-            return res.status(500).send("insertOneIntoEpisodes: episode_title, episode_director, episode_trilogy_name needs to be specified, (episode_trilogy_name exeption)")
+            return res.status(501).send("insertOneIntoEpisodes: episode_title, episode_director, episode_trilogy_name needs to be specified, (episode_trilogy_name exeption)")
         }
         trilogy_id = result[0].id;
         if(!title || !director || !trilogy_id) {
-            console.log(title + director + trilogy_id)
-            res.status(500).send("insertOneIntoEpisodes: episode_title, episode_director, episode_trilogy_name needs to be specified")
+            res.status(502).send("insertOneIntoEpisodes: episode_title, episode_director, episode_trilogy_name needs to be specified")
             return;
         }
 
@@ -74,18 +72,16 @@ async function insertOneIntoEpisodes(req, res){
             "VALUES (?,?,?,?,?,?,?,?);";
 
         let values = [title, director, production_dir, musics_creator, creation_date,budget, duration, trilogy_id];
-
         await mysqlConnection.query(insertQuery,values, (error, results) => {
             if (error) {
                 console.log("insertOneIntoEpisodes: ", error)
-                return res.status(500).send(error);
+                return res.status(503).send(error);
             }
             else {
                 return res.status(200).send("insertOneIntoEpisodes: done successfully");
             }
         })
     })
-
 }
 
 

@@ -3,7 +3,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all --parallel dev",
-    "dev": "parcel ./src/home.html --no-hmr"
+    "dev": "parcel ./src/episodes.html --no-hmr"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
