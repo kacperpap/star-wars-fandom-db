@@ -1,0 +1,942 @@
+{
+	"info": {
+		"_postman_id": "025e1b9b-baff-4fa6-89bb-018a606b2769",
+		"name": "star_wars_db_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24977610"
+	},
+	"item": [
+		{
+			"name": "MongoDB routes",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/mongodb/find",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "collectionName",
+									"value": "characters",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mongodb/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mongodb",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mongodb/insert/trilogy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "trilogy_name",
+									"value": "Last Chapter",
+									"type": "text"
+								},
+								{
+									"key": "trilogy_order",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "trilogy_size",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "trilogy_type",
+									"value": "film",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mongodb/insert/trilogy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mongodb",
+								"insert",
+								"trilogy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mongodb/insert/episodes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "episode_title",
+									"value": "After the dawn",
+									"type": "text"
+								},
+								{
+									"key": "episode_director",
+									"value": "Mark Finch",
+									"type": "text"
+								},
+								{
+									"key": "episode_trilogy",
+									"value": "Last Chapter",
+									"type": "text"
+								},
+								{
+									"key": "episode_creation_date",
+									"value": "2022-02-12",
+									"type": "text"
+								},
+								{
+									"key": "episode_budget",
+									"value": "342000000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mongodb/insert/episodes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mongodb",
+								"insert",
+								"episodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mongodb/insert/characters",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "role",
+									"value": "Niairo",
+									"type": "text"
+								},
+								{
+									"key": "actor",
+									"value": "Kacper",
+									"type": "text"
+								},
+								{
+									"key": "episodes",
+									"value": "Nowa nadzieja, Mroczne Widmo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mongodb/insert/characters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mongodb",
+								"insert",
+								"characters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mongodb/insert/universum",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "place_name",
+									"value": "Abalon",
+									"type": "text"
+								},
+								{
+									"key": "place_membership",
+									"value": "Undetermined",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mongodb/insert/universum",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mongodb",
+								"insert",
+								"universum"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mongodb/insert/events",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "characters",
+									"value": "Qui Gon Jiin, Devastoo",
+									"type": "text"
+								},
+								{
+									"key": "event_title",
+									"value": "Lorem ipsum",
+									"type": "text"
+								},
+								{
+									"key": "event_description",
+									"value": "Lorem ipsum",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mongodb/insert/events",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mongodb",
+								"insert",
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mongodb/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "objectID",
+									"value": "6474684f042423b4a45a7f84",
+									"type": "text"
+								},
+								{
+									"key": "collectionName",
+									"value": "characters",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mongodb/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mongodb",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mySQL routes",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/mysql/insert/trilogy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "trilogy_name",
+									"value": "Last Chapter",
+									"type": "text"
+								},
+								{
+									"key": "trilogy_order",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "trilogy_size",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "trilogy_type",
+									"value": "film",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/insert/trilogy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"insert",
+								"trilogy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/insert/episodes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "episode_title",
+									"value": "The nightshadow",
+									"type": "text"
+								},
+								{
+									"key": "episode_director",
+									"value": "Fallon Creg",
+									"type": "text"
+								},
+								{
+									"key": "episode_trilogy_name",
+									"value": "Original",
+									"type": "text"
+								},
+								{
+									"key": "episode_duration",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "episode_creation_date",
+									"value": "2022-12-23",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/insert/episodes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"insert",
+								"episodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mongodb/insert/awards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "award_type",
+									"value": "BAFTA",
+									"type": "text"
+								},
+								{
+									"key": "award_cathegory",
+									"value": "episode",
+									"type": "text"
+								},
+								{
+									"key": "award_description",
+									"value": "hey what's up",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mongodb/insert/awards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mongodb",
+								"insert",
+								"awards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/insert/character",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "role",
+									"value": "Palpero",
+									"type": "text"
+								},
+								{
+									"key": "actor",
+									"value": "Juan Mir",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/insert/character",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"insert",
+								"character"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/insert/scenes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "A new scene",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/insert/scenes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"insert",
+								"scenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/insert/universum",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "place_name",
+									"value": "Dominium",
+									"type": "text"
+								},
+								{
+									"key": "place_membership",
+									"value": "Republic",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/insert/universum",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"insert",
+								"universum"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/insert/episode-places",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "episode_id",
+									"value": "28",
+									"type": "text"
+								},
+								{
+									"key": "place_id",
+									"value": "39",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/insert/episode-places",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"insert",
+								"episode-places"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/insert/episode-appears",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "episode_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "character_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/insert/episode-appears",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"insert",
+								"episode-appears"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/insert/episode-events",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "episode_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "character_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "description_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/insert/episode-events",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"insert",
+								"episode-events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/episodes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/episodes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"episodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/trilogies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/trilogies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"trilogies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/universum",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/universum",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"universum"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/characters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"characters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/scenes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/scenes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"scenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/awards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/awards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"awards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/episode-places",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/episode-places",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"episode-places"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/episode-appears",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/episode-appears",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"episode-appears"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/events",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/get/table",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tableName",
+									"value": "episodes",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/get/table",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"get",
+								"table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/mysql/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tableName",
+									"value": "characters",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "244",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mysql/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mysql",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
